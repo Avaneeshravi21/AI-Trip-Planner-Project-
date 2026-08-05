@@ -3,7 +3,9 @@
 An intelligent travel assistant that takes a plain request like *"Plan a 5-day trip to Goa"*
 and returns a complete itinerary — attractions, restaurants, activities, transport, hotel
 costs, a daily budget, and live weather — by using a LangGraph agent that calls real,
-live tools instead of guessing from memory.
+live tools instead of guessing from memory.   
+
+🔗 **[Try the live demo here](https://47veztzwwib3fpa8mo9wjj.streamlit.app/#day-7)**
 
 Built with **LangChain**, **LangGraph**, **FastAPI**, and **Streamlit**.
 Runs **100% free** — every required API has a genuine free tier, no credit card needed.
@@ -110,6 +112,9 @@ streamlit_app.py     -> Streamlit chat UI
 notebook/            -> experiments.ipynb, used to test tools/agent in isolation
 BUGFIXES.md          -> full list of bugs found & fixed in this version
 ```
+
+
+🔗 **[Try the live demo here](https://47veztzwwib3fpa8mo9wjj.streamlit.app/#day-7)**
 
 ---
 
