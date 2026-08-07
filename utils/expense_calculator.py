@@ -1,15 +1,15 @@
 class Calculator:
     @staticmethod
-    def multiply(a: int, b: int) -> int:
+    def multiply(a: float, b: float) -> float:
         """
-        Multiply two integers.
+        Multiply two numbers.
 
         Args:
-            a (int): The first integer.
-            b (int): The second integer.
+            a (float): The first number.
+            b (float): The second number.
 
         Returns:
-            int: The product of a and b.
+            float: The product of a and b.
         """
         return a * b
     
@@ -39,5 +39,3 @@ class Calculator:
             float: Expense for a single day
         """
         return total / days if days > 0 else 0
-    
-    
