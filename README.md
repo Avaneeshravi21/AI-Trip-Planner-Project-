@@ -118,13 +118,3 @@ BUGFIXES.md          -> full list of bugs found & fixed in this version
 
 ---
 
-## Troubleshooting
-
-- **"GPLACES_API_KEY not set" warning** — this is expected and harmless if you're
-  running free-only. The app automatically uses Tavily instead.
-- **Streamlit can't reach the backend** — make sure `uvicorn` (Terminal 1) is running
-  *before* you submit a request in Streamlit.
-- **`FileNotFoundError` for config.yaml** — make sure you're running commands from
-  inside the project's root folder.
-- **Import errors right after install** — double check you activated the virtual
-  environment before running `pip install` / `uv pip install`.
