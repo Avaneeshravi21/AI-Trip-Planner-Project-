@@ -3,6 +3,8 @@ import datetime
 import os
 from dotenv import load_dotenv
 
+IST = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+
 # Local development: load keys from a .env file (does nothing on Streamlit
 # Cloud, since there is no .env file there - see the block below instead).
 load_dotenv()
@@ -94,7 +96,7 @@ if submit_button and user_input.strip():
 
         markdown_content = f"""# 🌍 AI Travel Plan
 
-**Generated:** {datetime.datetime.now().strftime('%Y-%m-%d at %H:%M')}
+**Generated:** {datetime.datetime.now(IST).strftime('%Y-%m-%d at %H:%M')}
 **Created by:** 😎Cool Dracula's Travel Agent
 
 ---
