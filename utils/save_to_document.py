@@ -1,6 +1,8 @@
 import os
 import datetime
 
+IST = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+
 def save_document(response_text: str, directory: str = "./output"):
     """Export travel plan to Markdown file with proper formatting"""
     os.makedirs(directory, exist_ok=True)
@@ -9,7 +11,7 @@ def save_document(response_text: str, directory: str = "./output"):
     # Create markdown content with metadata header
     markdown_content = f"""# 🌍 AI Travel Plan
 
-**Generated:** {datetime.datetime.now().strftime('%Y-%m-%d at %H:%M')}
+**Generated:** {datetime.datetime.now(IST).strftime('%Y-%m-%d at %H:%M')}
 **Created by:** Atriyo's Travel Agent
 
 ---
