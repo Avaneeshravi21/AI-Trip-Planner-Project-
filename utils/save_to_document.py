@@ -12,7 +12,11 @@ def save_document(response_text: str, directory: str = "./output"):
     markdown_content = f"""# 🌍 AI Travel Plan
 
 **Generated:** {datetime.datetime.now(IST).strftime('%Y-%m-%d at %H:%M')}
+<<<<<<< HEAD
 **Created by:** Atriyo's Travel Agent
+=======
+**Created by:** COOL Dracula's Travel Agent
+>>>>>>> 1ca33c93ee04b54cab65ac5c97ff304ef9046346
 
 ---
 
