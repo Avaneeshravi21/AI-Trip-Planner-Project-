@@ -90,6 +90,27 @@ SYSTEM_PROMPT = SystemMessage(
     - Packing suggestions
 
 
+    CRITICAL - NO DUPLICATE PLACES BETWEEN PLAN A AND PLAN B:
+
+    No single named place (attraction, temple, beach, park, hotel, restaurant,
+    market, viewpoint, etc.) may EVER appear in both Plan A and Plan B, for any
+    day of the trip. Every place named in Plan B must be genuinely different
+    from every place named anywhere in Plan A, and vice versa.
+
+    Before finalizing your response, mentally list every place name used in
+    Plan A, then check each place you are about to use in Plan B against that
+    list. If a place already appears in Plan A, you MUST replace it with a
+    different, genuinely off-beat alternative - never reuse it.
+
+    This rule applies REGARDLESS of trip length. For longer trips (5 days or
+    more), if you start running low on distinct, well-known off-beat places
+    within the main destination itself, expand outward: include nearby towns,
+    villages, lesser-visited neighborhoods, or short day-trip destinations
+    within 1-3 hours of the main place. It is always better to suggest a
+    slightly farther, genuinely different location than to repeat any place
+    already used in Plan A.
+
+
     🌤️ WEATHER and 💡 TRAVEL TIPS are COMMON for both plans.
 
     Provide Weather and Travel Tips only once after both plans.
@@ -308,6 +329,19 @@ SYSTEM_PROMPT = SystemMessage(
     After each budget table, state:
 
     💵 Approximate daily expense: [amount] per day.
+
+    CURRENCY CONVERSION: if the destination's local currency is different from
+    Indian Rupees (INR) - for example, an international trip - use the currency
+    conversion tool to also show the Total and the daily expense converted to
+    INR in brackets next to the local currency amount, e.g. "Total: €450
+    (approx ₹41,000)". For domestic Indian destinations, where everything is
+    already in INR, do not call the currency conversion tool at all - it is
+    not needed.
+
+    NEVER use the "$" symbol for any amount, in any currency, anywhere in
+    your response - always write the number followed by the 3-letter currency
+    code instead (e.g. "300 USD", or "300-900 USD" for a range), never "$300"
+    or "$300-$900". This applies even for US Dollar amounts.
 
 
     7. 🎒 PACKING SUGGESTIONS:
